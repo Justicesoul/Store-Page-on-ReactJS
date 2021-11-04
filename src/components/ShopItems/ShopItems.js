@@ -39,12 +39,12 @@ const shopItems = [
   },
 ];
 
-const Shop = (props) => {
+const Shop = () => {
   return shopItems.map(({ imgSrc, title, price }) => (
     <div
       className="shop-item"
       key={`${title}`}
-      onClick={() => alert(`Your choice is ${title}`)}
+      onClick={() => alert(`${title} is out of stock :(`)}
     >
       <img className="shop-item__image" src={`${imgSrc}`} alt="shop item" />
       <div className="shop-item__message">
