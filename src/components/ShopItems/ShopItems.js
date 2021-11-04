@@ -10,31 +10,31 @@ const shopItems = [
   {
     title: "Cupcake item",
     price: 7,
-    imgSrc: "https://picsum.photos/250",
+    imgSrc: "https://picsum.photos/250?random=1",
     type: "Cupcakes",
   },
   {
     title: "Doughnut item",
     price: 10,
-    imgSrc: "https://picsum.photos/250",
+    imgSrc: "https://picsum.photos/250?random=2",
     type: "Doughnuts",
   },
   {
     title: "Cake item",
     price: 3,
-    imgSrc: "https://picsum.photos/250",
+    imgSrc: "https://picsum.photos/250?random=3",
     type: "Cake",
   },
   {
     title: "Very sweet item",
     price: 6,
-    imgSrc: "https://picsum.photos/250",
+    imgSrc: "https://picsum.photos/250?random=4",
     type: "Sweets",
   },
   {
     title: "Chocolate item",
     price: 4,
-    imgSrc: "https://picsum.photos/250",
+    imgSrc: "https://picsum.photos/250?random=5",
     type: "Cake",
   },
 ];
