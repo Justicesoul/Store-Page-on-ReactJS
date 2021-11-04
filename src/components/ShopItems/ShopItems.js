@@ -40,23 +40,19 @@ const shopItems = [
 ];
 
 const Shop = (props) => {
-  // const clickHandler = () => {
-  //   alert(`Your choice is ${props.title}`);
-  // };
-  return shopItems.map((item, index) => (
+  const clickHandler = () => {
+    alert(`Your choice is ${props.title}`);
+  };
+  return shopItems.map(({ imgSrc, title, price }) => (
     <div
       className="shop-item"
       // key={item[index]}
       // onClick={clickHandler}
     >
-      <img
-        className="shop-item__image"
-        src={`${item.imgSrc}`}
-        alt="shop item"
-      />
+      <img className="shop-item__image" src={`${imgSrc}`} alt="shop item" />
       <div className="shop-item__message">
-        <span className="shop-item__text">{`${item.title}`}</span>
-        <span className="shop-item__text">{`$ ${item.price}`}</span>
+        <span className="shop-item__text">{`${title}`}</span>
+        <span className="shop-item__text">{`$ ${price}`}</span>
       </div>
     </div>
   ));
