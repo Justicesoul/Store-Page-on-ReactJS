@@ -40,14 +40,11 @@ const shopItems = [
 ];
 
 const Shop = (props) => {
-  const clickHandler = () => {
-    alert(`Your choice is ${props.title}`);
-  };
   return shopItems.map(({ imgSrc, title, price }) => (
     <div
       className="shop-item"
-      // key={item[index]}
-      // onClick={clickHandler}
+      key={`${title}`}
+      onClick={() => alert(`Your choice is ${title}`)}
     >
       <img className="shop-item__image" src={`${imgSrc}`} alt="shop item" />
       <div className="shop-item__message">
