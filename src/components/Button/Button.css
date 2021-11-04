@@ -1,0 +1,22 @@
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: black;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: black;
+  color: pink;
+}
+
+.button:first-child {
+  margin-left: 0px;
+}

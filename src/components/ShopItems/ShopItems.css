@@ -1,0 +1,27 @@
+.shop-item {
+  border: 4px rgb(214, 216, 215) solid;
+  padding: 0;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.shop-item:hover {
+  border: 4px rgb(231, 117, 136) solid;
+}
+
+.shop-item__image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px 7px 0 0;
+}
+
+.shop-item__message {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-item__text {
+  padding: 5px 15px;
+  font-size: 20px;
+}

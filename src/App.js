@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from "./components/Button/Button";
+import Shop from "./components/ShopItems/ShopItems";
 
-function App() {
+const cakes = ["All", "Cakes", "Cupcakes", "Sweets", "Doughnuts"];
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 className="heading">
+        Our <span className="heading--pink">Store</span>
+      </h1>
+      <div className="nav">
+        {cakes.map((item, index) => (
+          <Button key={item[index]} buttonName={`${item}`} />
+        ))}
+      </div>
+      <div className="containier">
+        <Shop />
+      </div>
+    </>
   );
-}
+};
 
 export default App;
