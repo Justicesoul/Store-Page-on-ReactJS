@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.shop-basket {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.shop-basket:hover {
+  background-color: rgb(214, 125, 140);
+  border-color: rgb(214, 125, 140);
+  color: white;
+}
+
+.shop-basket__items {
+  display: inline-block;
+  font-size: 22px;
+
+  padding: 0 5px;
+}

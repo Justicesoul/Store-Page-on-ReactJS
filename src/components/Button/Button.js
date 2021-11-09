@@ -1,11 +1,8 @@
 import "./Button.css";
 
-const Button = ({ buttonName }) => {
-  const clickHandler = () => {
-    alert(`Your choice is ${buttonName}`);
-  };
+const Button = ({ buttonName, shopFilter }) => {
   return (
-    <button className="button" onClick={clickHandler}>
+    <button className="button" onClick={shopFilter}>
       {buttonName}
     </button>
   );
