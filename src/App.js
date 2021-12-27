@@ -92,13 +92,13 @@ const App = () => {
   });
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
+    const interval = setInterval(() => {
       if (counter > 9) {
         document.querySelector('h1').style.color =
           colorHeading[Math.floor(Math.random() * colorHeading.length)];
       }
     }, 1000);
-    return () => clearTimeout(timeout);
+    return () => clearInterval(interval);
   });
 
   const shopFilter = (value) => {
